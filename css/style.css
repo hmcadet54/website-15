@@ -351,9 +351,9 @@ body.section-show .section.active{
 =======================================================================*/
 body.section-show .transition-mask{
 	position:absolute;
-	top:260px;
-	height:500px;
-	width:500px;
+	top:200px;
+	height:400px;
+	width:400px;
 	left:0;
 	right:0;
 	margin:auto;
@@ -376,7 +376,7 @@ body.section-show .transition-mask:before{
 	-webkit-animation: fill .4s both ease;
 	-moz-animation: fill .4s both ease;
 	animation: fill .4s both ease;
-	background:#CCC;
+	background:#ca3d3d;
 }
 
 @-webkit-keyframes fill2{
@@ -437,9 +437,10 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:60px;
-	padding-bottom:200px;
+	padding-top:0px;
+	padding-bottom:50px;
 	position:relative;
+	margin: 0 auto;
 }
 .front-heading{
 	text-align:center;
@@ -462,8 +463,8 @@ body.section-show .transition-mask:before{
 }
 
 .front-person-img{
-	width:500px;
-	height:500px;
+	width:400px;
+	height:400px;
 	overflow:hidden;
 	background:#F0F0F0;
 	position:relative;
@@ -479,24 +480,31 @@ body.section-show .transition-mask:before{
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 	border-radius:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .front-person-img > img{
 	max-width:100%;
-	vertical-align:bottom;
-	-webkit-transform:rotate(-45deg) translateY(40px);
-	-moz-transform:rotate(-45deg) translateY(40px);
-	-ms-transform:rotate(-45deg) translateY(40px);
-	-o-transform:rotate(-45deg) translateY(40px);
-	transform:rotate(-45deg) translateY(40px);
+	vertical-align:center;
+	-webkit-transform:rotate(-45deg) translateY(0px);
+	-moz-transform:rotate(-45deg) translateY(0px);
+	-ms-transform:rotate(-45deg) translateY(0px);
+	-o-transform:rotate(-45deg) translateY(0px);
+	transform:rotate(-45deg) translateY(0px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
 .front-person-titles{
 	position:relative;
 	z-index:10;
-	height:500px;
-	width:500px;
+	height:400px;
+	width:400px;
 	margin:auto;
-	margin-top:-500px;
+	margin-top:-400px;
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
 	-ms-transform:rotate(45deg);
@@ -512,7 +520,7 @@ body.section-show .transition-mask:before{
 	color:#CCC;
 	text-align:center;
 	font-size:24px;
-	letter-spacing:25px;
+	letter-spacing:10px;
 	line-height:1em;
 	text-transform:lowercase;
 }
@@ -552,9 +560,9 @@ body.section-show .transition-mask:before{
 
 .front-person-links{
 	margin:auto;
-	width:500px;
-	height:500px;
-	margin-top:-500px;
+	width:400px;
+	height:400px;
+	margin-top:-400px;
 	z-index:25;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -589,7 +597,7 @@ body.section-show .transition-mask:before{
 	font-weight:bold;
 	display:block;
 	font-size:14px;
-	padding:25px 0;
+	padding:15px 0;
 	cursor:pointer;
 	-webkit-transition:all .3s ease;
 	-moz-transition:all .3s ease;
