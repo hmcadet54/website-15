@@ -376,7 +376,8 @@ body.section-show .transition-mask:before{
 	-webkit-animation: fill .4s both ease;
 	-moz-animation: fill .4s both ease;
 	animation: fill .4s both ease;
-	background-image: url(../img/transitionbg.svg);
+	/* background-image: url(../img/transitionbg.svg); */
+	background-color: #333;
 }
 
 @-webkit-keyframes fill2{
@@ -1805,6 +1806,7 @@ body .symp-btn{
 	Responsive CSS
 =======================================================================*/
 @media (max-width:992px){
+	
 	.about-person-img{
 		margin-bottom:40px;
 		text-align:center;
@@ -1814,18 +1816,20 @@ body .symp-btn{
 	}
 	.front-section{
 		padding-bottom:110px;
+		overflow: scroll;
 	}
 	body.section-show .transition-mask{
-		position:absolute;
-		top:180px;
-		height:300px;
-		width:300px;
+		/* position:absolute; */
+		top:0px;
+		height:500vh;
+		width:200%;
 		left:0;
-		right:0;
-		margin:auto;
+		/* right:100px; */
+		/* margin:auto; */
+		bottom: 0;
 		z-index:22;
-		transform:rotate(45deg);
-		overflow:hidden;
+		/* transform:rotate(0deg); */
+		/* overflow:hidden; */
 		-webkit-animation: fill2 .8s .4s both ease;
 		-moz-animation: fill2 .8s .4s both ease;
 		animation: fill2 .8s .4s both ease;
@@ -1898,9 +1902,9 @@ body .symp-btn{
 	}
 	.front-person-links > ul > li > a{
 		text-align:center;
-		padding:10px 48px;
+		padding:10px 38px;
 		display:block;
-		font-size:22px;
+		font-size:18px;
 		letter-spacing:2px;
 		text-transform:none;
 	}
@@ -1918,7 +1922,7 @@ body .symp-btn{
 		display:block;
 		margin:25px 0;
 		letter-spacing:10px;
-		font-size:26px;
+		font-size:22px;
 		text-transform:uppercase;
 		top:auto !important;
 		left:auto !important;
@@ -1928,11 +1932,47 @@ body .symp-btn{
 	.front-heading{
 		margin-top:80px;
 	}
+	@-webkit-keyframes fill2{
+		0%{
+			transform:rotate(0deg);
+		}
+		100%{
+			z-index:50;
+			transform:rotate(0deg);
+			height:200%;
+			width:100%;
+			top:0;
+			bottom:0;
+			right: 100px;
+		}
+	}
+	@keyframes fill2{
+		0%{
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			/* transform:rotate(45deg); */
+		}
+		100%{
+			z-index:50;
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			transform:rotate(0deg);
+			height:200%;
+			width:100%;
+			top:0;
+			right: 100px;
+			bottom:0;
+		}
+	}
 }
 @media (max-width:768px){
 	
 	.front-person-links{
-		margin-top:65px;
+		margin-top:50px;
 	}
 	.front-person-img{
 		width:65%;
@@ -1951,18 +1991,55 @@ body .symp-btn{
 		left:-40px;
 	}
 	body.section-show .transition-mask{
-		position:absolute;
-		top:140px;
-		height:260px;
-		width:260px;
+		/* position:absolute; */
+		top:0px;
+		height:200%;
+		width:300%;
 		left:0;
-		right:0;
-		margin:auto;
+		/* right:100px; */
+		/* margin:auto; */
+		bottom: 0;
 		z-index:22;
-		transform:rotate(45deg);
-		overflow:hidden;
+		/* transform:rotate(0deg); */
+		/* overflow:hidden; */
 		-webkit-animation: fill2 .8s .4s both ease;
 		-moz-animation: fill2 .8s .4s both ease;
 		animation: fill2 .8s .4s both ease;
+	}
+	@-webkit-keyframes fill2{
+		0%{
+			transform:rotate(0deg);
+		}
+		100%{
+			z-index:50;
+			transform:rotate(0deg);
+			height:200%;
+			width:100%;
+			top:0;
+			bottom:0;
+			right: 100px;
+		}
+	}
+	@keyframes fill2{
+		0%{
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			/* transform:rotate(45deg); */
+		}
+		100%{
+			z-index:50;
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			transform:rotate(0deg);
+			height:200%;
+			width:100%;
+			top:0;
+			right: 100px;
+			bottom:0;
+		}
 	}
 }
